@@ -32,7 +32,6 @@ xhr.onload = function() {
 };
 const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', () => {
-  console.log("in ${selectedAppId}");
   console.log(selectedAppId);
 });
 xhr.send();
