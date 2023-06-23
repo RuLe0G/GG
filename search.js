@@ -32,10 +32,10 @@ xhr.onload = function() {
     });
   }
 };
-xhr.send();
-
 const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', () => {
   console.log("in ${selectedAppId}");
   console.log(selectedAppId);
 });
+xhr.send();
+
