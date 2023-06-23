@@ -1,4 +1,5 @@
 const xhr = new XMLHttpRequest();
+let selectedAppId = 4;
 xhr.open('GET', '/steam_data.json', true);
 xhr.onload = function() {
   if (xhr.status === 200) {
@@ -8,23 +9,20 @@ xhr.onload = function() {
     const searchInput = document.getElementById('search-input');
     const suggestionsList = document.getElementById('suggestions-list');
 
-    let selectedAppId; // Глобальная переменная для сохранения appid
-
     searchInput.addEventListener('input', () => {
       const userInput = searchInput.value.toLowerCase();
       const filteredSuggestions = suggestions.filter(suggestion => suggestion.name.toLowerCase().startsWith(userInput));
 
       suggestionsList.innerHTML = '';
 
-      // Ограничение на вывод первых 5 подсказок
-      const limitedSuggestions = filteredSuggestions.slice(0, 5);
+      const limitedSuggestions = filteredSuggestions.slice(0, 10);
 
       limitedSuggestions.forEach(suggestion => {
         const li = document.createElement('li');
         li.textContent = suggestion.name;
         li.addEventListener('click', () => {
           searchInput.value = suggestion.name;
-          selectedAppId = suggestion.appid; // Сохранение appid в глобальную переменную
+          selectedAppId = suggestion.appid;
           suggestionsList.innerHTML = '';
         });
         suggestionsList.appendChild(li);
