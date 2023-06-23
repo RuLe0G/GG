@@ -9,7 +9,6 @@ xhr.onload = function() {
     const suggestionsList = document.getElementById('suggestions-list');
 
     searchInput.addEventListener('input', () => {
-      console.log("in!");
       const userInput = searchInput.value.toLowerCase();
       const filteredSuggestions = suggestions.filter(suggestion => suggestion.name.toLowerCase().startsWith(userInput));
 
