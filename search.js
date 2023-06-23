@@ -32,7 +32,19 @@ xhr.onload = function() {
 };
 const searchButton = document.getElementById('search-button');
 searchButton.addEventListener('click', () => {
-  console.log(selectedAppId);
+  const infoBlock = document.querySelector('.info-blocks .info-block');
+  const appDetailsUrl = `https://steamspy.com/api.php?request=appdetails&appid=${selectedAppId}`;
+
+  // Выполнение AJAX-запроса к URL appDetailsUrl
+  const appDetailsXhr = new XMLHttpRequest();
+  appDetailsXhr.open('GET', appDetailsUrl, true);
+  appDetailsXhr.onload = function() {
+    if (appDetailsXhr.status === 200) {
+      const appDetails = JSON.parse(appDetailsXhr.responseText);
+      infoBlock.textContent = JSON.stringify(appDetails);
+    }
+  };
+  appDetailsXhr.send();
 });
 xhr.send();
 
