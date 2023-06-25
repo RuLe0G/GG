@@ -1,6 +1,7 @@
 let selectedAppId = 4;
-import { HowLongToBeatService, HowLongToBeatEntry } from 'howlongtobeat';
-let hltbService = new HowLongToBeatService();
+let hltb = require('howlongtobeat');
+let hltbService = new hltb.HowLongToBeatService();
+
 
 const xhr = new XMLHttpRequest();
 xhr.open('GET', '/steam_data.json', true);
@@ -24,10 +25,10 @@ xhr.onload = function() {
         const li = document.createElement('li');
         li.textContent = suggestion.name;
         li.addEventListener('click', () => {
-          hltbService.search(suggestion.name).then(result => console.log(result));
           searchInput.value = suggestion.name;
           selectedAppId = suggestion.appid;
           suggestionsList.innerHTML = '';
+          hltbService.detail(selectedAppId).then(result => console.log(result)).catch(e => console.error(e));
         });
         suggestionsList.appendChild(li);
       });
