@@ -68,7 +68,8 @@ xhr.onload = function() {
               <h2>Steam Reviews</h2>
               <p><strong>Positive Reviews:</strong> ${positive}</p>
               <p><strong>Negative Reviews:</strong> ${negative}</p>
-              <p><strong>SteamDB Rating:</strong> ${steamReviews}</p>
+              <p><strong>SteamDB Rating:</strong> ${SteamDBRating}</p>
+              <p><strong>Steam Rating:</strong> ${steamReviews}</p>
             `;
             infoBlock2.innerHTML = appInfo2;
 
@@ -82,7 +83,7 @@ xhr.onload = function() {
 
             const infoBlock4 = document.querySelector('.info-blocks .info-block:nth-of-type(4)');
             const timeToBeatArr = timeToBeat.split('||');
-            const timeToBeatText = timeToBeatArr.join('<br>');
+            const timeToBeatText = timeToBeatArr.map(time => `${time.trim()} hours`).join('<br>');
             const appInfo4 = `
               <h2>HowLongToBeat</h2>
               <p>${timeToBeatText}</p>

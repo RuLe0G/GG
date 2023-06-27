@@ -7,16 +7,35 @@
 <body>
   <div class="container">
     <div class="search-container">
-        <input type="text" id="search-input" placeholder="Введите название">
-        <ul id="suggestions-list"></ul>
-        
-      <button id="search-button">Search</button>
+      <input type="text" id="search-input" placeholder="Введите название">
+      <ul id="suggestions-list"></ul>        
     </div>
     <div class="info-blocks">
       <div class="info-block"></div>
       <div class="info-block"></div>
       <div class="info-block"></div>
       <div class="info-block"></div>
+    </div>
+    <div class="calculator">
+      <h2>Calculator</h2>
+      <label for="hours">Часы:</label>
+      <input type="text" id="hours">
+      <label for="category1">Категория:</label>
+      <select id="category1">
+        <option value="старое говно">старое говно</option>
+        <option value="новое инди">новое инди</option>
+        <option value="трипл анус">трипл анус</option>
+        <option value="хайтир инди">хайтир инди</option>
+        <option value="ноунейм 2010+">ноунейм 2010+</option>
+      </select>
+      <label for="category2">Оценка:</label>
+      <select id="category2">
+        <option value="норм">норм</option>
+        <option value="шедевр">шедевр</option>
+        <option value="говно">говно</option>
+      </select>
+      <label for="result">Результат:</label>
+      <input type="text" id="result" readonly>
     </div>
   </div>
   <script src="search.js"></script>
