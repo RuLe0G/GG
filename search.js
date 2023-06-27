@@ -12,7 +12,7 @@ var SteamDBRating = "100";
 
 
 const xhr = new XMLHttpRequest();
-xhr.open('GET', '/merged.json', true);
+xhr.open('GET', 'merged.json', true);
 xhr.onload = function() {
   if (xhr.status === 200) {
     const data = JSON.parse(xhr.responseText);
