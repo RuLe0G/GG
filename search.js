@@ -98,6 +98,25 @@ xhr.onload = function() {
 };
 xhr.send();
 
+const hoursInput = document.getElementById('hours');
+const category1Select = document.getElementById('category1');
+const category2Select = document.getElementById('category2');
+const resultInput = document.getElementById('result');
+
+function calculateResult() {
+  const hours = parseInt(hoursInput.value);
+  const modifier1 = parseFloat(category1Select.value);
+  const modifier2 = parseFloat(category2Select.value);
+
+  const result = (hours * 10) * modifier1 * modifier2;
+  resultInput.value = result.toFixed(2);
+}
+
+hoursInput.addEventListener('input', calculateResult);
+category1Select.addEventListener('change', calculateResult);
+category2Select.addEventListener('change', calculateResult);
+
+
 function getSteamReviewsText(rating) {
   const steamRating = parseFloat(rating);
   if (steamRating >= 80) {
