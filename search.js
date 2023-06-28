@@ -104,7 +104,7 @@ const category2Select = document.getElementById('category2');
 const resultInput = document.getElementById('result');
 
 function calculateResult() {
-  const hours = parseInt(hoursInput.value);
+  const hours = parseFloat(hoursInput.value);
   const modifier1 = parseFloat(category1Select.value);
   const modifier2 = parseFloat(category2Select.value);
 
