@@ -2,18 +2,27 @@
 
 .dark-theme {
   background-color: #333;
+}
+.dark-theme #search-input,
+.dark-theme input[type="text"],
+.dark-theme select {
   color: #fff;
 }
-
 .dark-theme .info-block {
   background-color: #555;
+  color: #ccc
 }
 .dark-theme #suggestions-list {
   background-color: #555;
 }
-
+.dark-theme #result {
+  background-color: #555;
+}
 .dark-theme input[type="text"],
 .dark-theme select {
+  background-color: #555;
+}
+.dark-theme result {
   background-color: #555;
 }
 
