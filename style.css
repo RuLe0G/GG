@@ -5,6 +5,19 @@
   color: #fff;
 }
 
+.dark-theme .info-block {
+  background-color: #555;
+}
+.dark-theme #suggestions-list {
+  background-color: #555;
+}
+
+.dark-theme input[type="text"],
+.dark-theme select {
+  background-color: #555;
+}
+
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
 }
