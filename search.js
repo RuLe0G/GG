@@ -132,6 +132,7 @@ function getSteamReviewsText(rating) {
   }
 }
 
-const themeToggle = document.querySelector_'#theme-toggle');
+const themeToggle = document.querySelector('#theme-toggle');
 themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-theme');});
+  document.body.classList.toggle('dark-theme');
+});
