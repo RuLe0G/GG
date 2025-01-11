@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.dark-theme {
+  background-color: #333;
+}
+.dark-theme #search-input,
+.dark-theme input[type="text"],
+.dark-theme select {
+  color: #fff;
+}
+.dark-theme .info-block {
+  background-color: #555;
+  color: #ccc
+}
+.dark-theme #suggestions-list {
+  background-color: #555;
+}
+.dark-theme #result {
+  background-color: #555;
+}
+.dark-theme input[type="text"],
+.dark-theme select {
+  background-color: #555;
+}
+.dark-theme result {
+  background-color: #555;
+}
+
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #222;
+  color: lightgray;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+#search-input {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.info-blocks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info-block {
+  width: 25%;
+  height: 330px;
+  background-color: lightgray;
+  margin: 0 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+    
+  background-color: #505050;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+#search-button {
+  margin-left: 10px;
+}
+
+#suggestions-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#suggestions-list li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+#suggestions-list li:hover {
+  background-color: lightgray;
+  color: #222;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.calculator h2 {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.calculator label {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 5px;
+}
+
+.calculator select, .calculator input[type="text"] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.calculator input[type="text"][readonly] {
+  background-color: lightgray;
+}
+
+.calculator input[type="text"]:focus {
+  outline: none;
+}
+
+a {
+  color: #289aff;
+}
+
+#search-input, #hours, #category1, #category2, #result {
+  background-color: #505050;
+  color: lightgray;
+}
