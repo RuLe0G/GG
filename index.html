@@ -11,8 +11,8 @@
 
 <div class="tabs">
     <button class="tab-button active" data-tab="tab1">Поиск</button>
-    <button class="tab-button" data-tab="tab2">Another Tab</button>
-    <button class="tab-button" data-tab="tab3">Another Tab2</button>
+    <button class="tab-button" data-tab="tab2">Зал славы</button>
+    <button class="tab-button" data-tab="tab3">Библиотека игр</button>
 </div>
 
 <div class="tab-content active" id="tab1">
@@ -62,15 +62,19 @@
 </div>
 
 <div class="tab-content" id="tab2">
-    <h2>Another Tab Content</h2>
-    <p>Coming soon!</p>
+    <div id="current-event" class="event-panel">
+    </div>
+    <div id="past-events" class="event-panel">
+    </div>
 </div>
+
 
 <div class="tab-content" id="tab3">
-    <h2>Another Tab Content</h2>
-    <p>Coming soon!</p>
+    <h2>Soon..</h2>
 </div>
 
-<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+<script src="js/tab1.js"></script>
+<script src="js/tab2.js"></script>
 </body>
 </html>
