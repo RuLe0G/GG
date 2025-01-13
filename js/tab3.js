@@ -14,59 +14,70 @@ async function fetchData() {
 
 function parseCSV(data) {
     const rows = data.split('\n').map(row => row.split(','));
-    const headers = rows.shift();
-    return rows.map(row =>
-        Object.fromEntries(row.map((value, index) => [headers[index], value.trim()])));
+    const headers = rows.shift(); 
+    return { headers, rows };
 }
 
-function createAchievementPanels(data) {
+function createAchievementPanels({ headers, rows }) {
     const container = document.getElementById('tab3');
     container.innerHTML = '';
 
-    const groupedData = data.reduce((acc, row) => {
-        if (!acc[row.Name]) acc[row.Name] = [];
-        acc[row.Name].push(row);
-        return acc;
-    }, {});
+    const playerNames = headers.slice(2);
 
-    for (const [name, achievements] of Object.entries(groupedData)) {
+    const players = playerNames.map(name => ({ name, achievements: [] }));
+
+    rows.forEach((row, rowIndex) => {
+        const imageUrl = row[0].trim(); 
+        const achievementName = row[1].trim(); 
+        row.slice(2).forEach((value, index) => {
+            if (value.trim() === '1') {
+                players[index].achievements.push({ name: achievementName, image: imageUrl });
+            }
+        });
+        console.log(`Row ${rowIndex}:`, row); 
+    });
+
+    console.log('Players data:', players);
+
+    players.forEach(player => {
         const panel = document.createElement('div');
-        panel.className = 'panel';
+        panel.className = 'player-panel';
 
         const title = document.createElement('h3');
-        title.textContent = name;
+        title.textContent = player.name;
         title.style.textAlign = 'center';
+        title.style.marginBottom = '10px';
         panel.appendChild(title);
 
         const achievementList = document.createElement('div');
-        achievementList.className = 'achievement-list';
+        achievementList.className = 'achievement-list-horizontal';
         panel.appendChild(achievementList);
 
-        achievements.forEach(achievement => {
+        player.achievements.forEach(achievement => {
             const card = document.createElement('div');
             card.className = 'achievement-card';
 
             const image = document.createElement('img');
-            image.src = achievement.Image;
-            image.alt = achievement.Title;
+            image.src = achievement.image;
+            image.alt = achievement.name;
+            image.width = 32; 
+            image.height = 32;
             card.appendChild(image);
 
             const text = document.createElement('p');
-            text.textContent = achievement.Title;
+            text.textContent = achievement.name;
+            text.style.margin = '0';
+            text.style.padding = '5px';
+            text.style.textAlign = 'center';
             card.appendChild(text);
-
-            if (achievement.Status === '1') {
-                card.style.border = '2px solid green';
-            } else {
-                card.style.border = '2px solid red';
-            }
 
             achievementList.appendChild(card);
         });
 
         container.appendChild(panel);
-    }
+    });
 }
+
 
 async function initTab3() {
     const data = await fetchData();
