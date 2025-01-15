@@ -14,37 +14,42 @@ async function fetchData() {
 
 function parseCSV(data) {
     const rows = data.split('\n').map(row => row.split(','));
-    const headers = rows.shift(); 
-    return { headers, rows };
+    const headers = rows.shift();
+    return {headers, rows};
 }
 
-function createAchievementPanels({ headers, rows }) {
+function createAchievementPanels({headers, rows}) {
     const container = document.getElementById('tab3');
     container.innerHTML = '';
 
-    const playerNames = headers.slice(2);
+    const playerNames = headers.slice(3);
 
-    const players = playerNames.map(name => ({ name, achievements: [] }));
+    const players = playerNames.map(name => ({name, achievements: []}));
 
     rows.forEach((row, rowIndex) => {
-        const imageUrl = row[0].trim(); 
-        const achievementName = row[1].trim(); 
-        row.slice(2).forEach((value, index) => {
+        const rarity = row[0].trim();
+        const imageUrl = row[1].trim();
+        const achievementName = row[2].trim();
+
+        row.slice(3).forEach((value, index) => {
             if (value.trim() === '1') {
-                players[index].achievements.push({ name: achievementName, image: imageUrl });
+                players[index].achievements.push({
+                    name: achievementName,
+                    image: imageUrl,
+                    rarity: rarity
+                });
             }
         });
-        console.log(`Row ${rowIndex}:`, row); 
     });
 
-    console.log('Players data:', players);
+    players.sort((a, b) => b.achievements.length - a.achievements.length);
 
     players.forEach(player => {
         const panel = document.createElement('div');
         panel.className = 'player-panel';
 
         const title = document.createElement('h3');
-        title.textContent = player.name;
+        title.textContent = `${player.name} (${player.achievements.length})`;
         title.style.textAlign = 'center';
         title.style.marginBottom = '10px';
         panel.appendChild(title);
@@ -56,11 +61,14 @@ function createAchievementPanels({ headers, rows }) {
         player.achievements.forEach(achievement => {
             const card = document.createElement('div');
             card.className = 'achievement-card';
+            if (achievement.rarity === 'Rare') {
+                card.classList.add('rare');
+            }
 
             const image = document.createElement('img');
             image.src = achievement.image;
             image.alt = achievement.name;
-            image.width = 32; 
+            image.width = 32;
             image.height = 32;
             card.appendChild(image);
 
@@ -77,7 +85,6 @@ function createAchievementPanels({ headers, rows }) {
         container.appendChild(panel);
     });
 }
-
 
 async function initTab3() {
     const data = await fetchData();
