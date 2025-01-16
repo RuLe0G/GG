@@ -1,0 +1,229 @@
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    transition: width 0.1s ease;
+}
+
+.search-input{
+    margin: 5px;
+    padding: 8px 12px;
+    background-color: var(--primary);
+    color: var(--bg);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.search-input::placeholder {
+    color: var(--bg);
+    opacity: 0.5;
+}
+
+.search-input:focus {
+    background-color: var(--secondary);
+    color: var(--bg);
+    outline: none;
+}
+
+.games-grid.collapsed {
+    width: 55%;
+    transition: width 0.1s ease;
+}
+
+.game-card {
+    aspect-ratio: 3 / 4;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.game-card p {
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--text);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.search-bar {
+    margin: 10px 0;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    background: var(--bg);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+    transform: translateX(100%);
+}
+
+.sidebar img.sidebar-image {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    margin: 10px 0;
+}
+
+.close-sidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.slider-label {
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+.authors-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.author-tag {
+    background-color: var(--primary);
+    border: 1px solid var(--accent);
+    color: var(--bg);
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.author-tag:hover {
+    background-color: var(--secondary);
+}
+
+.events-container {
+    margin-top: 2px;
+}
+
+.event-tag {
+    background-color: var(--primary);
+    border: 1px solid var(--accent);
+    color: var(--bg);
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-tag:hover {
+    background-color: var(--secondary);
+}
+
+.reset-button {
+    background-color: var(--primary);
+    border: 1px solid var(--accent);
+    color: var(--bg);
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.reset-button:hover {
+    background-color: var(--secondary);
+}
+
+.review-card {
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--secondary);
+}
+
+.review-card h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.dark-theme .game-card p {
+    background: rgba(0, 0, 0, 0.9);
+    color: var(--darkText);
+}
+
+.dark-theme .sidebar {
+    background: var(--darkBg);
+    box-shadow: -2px 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme .close-sidebar {
+    color: var(--darkText);
+}
+
+.dark-theme .author-tag {
+    background-color: var(--darkPrimary);
+    border: 1px solid var(--darkAccent);
+    color: var(--darkText);
+}
+
+.dark-theme .author-tag:hover {
+    background-color: var(--darkSecondary);
+}
+
+.dark-theme .event-tag {
+    background-color: var(--darkPrimary);
+    border: 1px solid var(--darkAccent);
+    color: var(--darkText);
+}
+
+.dark-theme .event-tag:hover {
+    background-color: var(--darkSecondary);
+}
+
+.dark-theme .reset-button {
+    background-color: var(--darkPrimary);
+    border: 1px solid var(--darkAccent);
+    color: var(--darkText);
+}
+
+.dark-theme .reset-button:hover {
+    background-color: var(--darkSecondary);
+}
+
+.dark-theme .review-card {
+    border: 1px solid var(--darkAccent);
+    background-color: var(--darkSecondary);
+}
+.search-input{
+    background-color: var(--darkPrimary);
+    color: var(--darkBg);
+}
+
+.search-input::placeholder {
+    color: var(--darkText);
+}
+
+.search-input:focus {
+    background-color: var(--darkSecondary);
+    color: var(--darkText);
+}
