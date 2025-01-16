@@ -5,6 +5,7 @@
     width: 100%;
     transition: width 0.1s ease;
 }
+
 .games-grid.collapsed {
     width: 55%;
     transition: width 0.1s ease;
@@ -28,7 +29,7 @@
     border-radius: 4px;
 }
 
-.search-bar{
+.search-bar {
     margin: 10px 0;
 }
 
@@ -88,6 +89,7 @@
 .author-tag {
     background-color: var(--primary);
     border: 1px solid var(--accent);
+    color: var(--bg);
     border-radius: 4px;
     padding: 5px 10px;
     cursor: pointer;
@@ -95,6 +97,38 @@
 }
 
 .author-tag:hover {
+    background-color: var(--secondary);
+}
+
+.events-container {
+    margin-top: 2px;
+}
+
+.event-tag {
+    background-color: var(--primary);
+    border: 1px solid var(--accent);
+    color: var(--bg);
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-tag:hover {
+    background-color: var(--secondary);
+}
+
+.reset-button {
+    background-color: var(--primary);
+    border: 1px solid var(--accent);
+    color: var(--bg);
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.reset-button:hover {
     background-color: var(--secondary);
 }
 
@@ -111,51 +145,50 @@
     font-size: 16px;
 }
 
-.event-tag {
-    background-color: var(--secondary);
-    border: 1px solid var(--accent);
-    border-radius: 4px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.event-tag:hover {
-    background-color: var(--primary);
-}
-
-.reset-button {
-    background-color: var(--primary);
-    color: var(--text);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.reset-button:hover {
-    background-color: var(--secondary);
-}
-
-.dark-theme .game-card p{
+.dark-theme .game-card p {
     background: rgba(0, 0, 0, 0.9);
     color: var(--darkText);
 }
+
 .dark-theme .sidebar {
     background: var(--darkBg);
     box-shadow: -2px 0 10px rgba(255, 255, 255, 0.2);
 }
+
 .dark-theme .close-sidebar {
     color: var(--darkText);
 }
-.dark-theme .author-tag{
+
+.dark-theme .author-tag {
     background-color: var(--darkPrimary);
     border: 1px solid var(--darkAccent);
+    color: var(--darkText);
 }
+
 .dark-theme .author-tag:hover {
     background-color: var(--darkSecondary);
 }
+
+.dark-theme .event-tag {
+    background-color: var(--darkPrimary);
+    border: 1px solid var(--darkAccent);
+    color: var(--darkText);
+}
+
+.dark-theme .event-tag:hover {
+    background-color: var(--darkSecondary);
+}
+
+.dark-theme .reset-button {
+    background-color: var(--darkPrimary);
+    border: 1px solid var(--darkAccent);
+    color: var(--darkText);
+}
+
+.dark-theme .reset-button:hover {
+    background-color: var(--darkSecondary);
+}
+
 .dark-theme .review-card {
     border: 1px solid var(--darkAccent);
     background-color: var(--darkSecondary);

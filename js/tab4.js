@@ -145,7 +145,7 @@ function showSidebar(game, sidebar) {
     closeButton.textContent = '✕';
     closeButton.addEventListener('click', () => {
         sidebar.classList.add('hidden');
-        gamesGrid.classList.remove('collapsed'); 
+        gamesGrid.classList.remove('collapsed');
     });
     sidebar.appendChild(closeButton);
 
