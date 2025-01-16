@@ -40,11 +40,11 @@ function createLibraryTab(data) {
     ratingSlider.addEventListener('input', () => {
         const value = ratingSlider.value;
         sliderLabel.textContent = value === '0' ? 'Не использовать' : `${value}/10`;
-        filterGames(data.Library, searchInput.value.toLowerCase(), parseInt(value), null);
+        filterGames(data.Library, searchInput.value.toLowerCase(), parseInt(value));
     });
 
     searchInput.addEventListener('input', () => {
-        filterGames(data.Library, searchInput.value.toLowerCase(), parseInt(ratingSlider.value), null);
+        filterGames(data.Library, searchInput.value.toLowerCase(), parseInt(ratingSlider.value));
     });
 
     ratingSliderContainer.appendChild(ratingSlider);
@@ -60,9 +60,12 @@ function createLibraryTab(data) {
         const authorTag = document.createElement('button');
         authorTag.className = 'author-tag';
         authorTag.textContent = author;
+
         authorTag.addEventListener('click', () => {
+            toggleActiveTag(authorTag, authorsContainer);
             filterGames(data.Library, searchInput.value.toLowerCase(), parseInt(ratingSlider.value), author);
         });
+
         authorsContainer.appendChild(authorTag);
     });
 
@@ -74,15 +77,17 @@ function createLibraryTab(data) {
         const eventTag = document.createElement('button');
         eventTag.className = 'event-tag';
         eventTag.textContent = event;
+
         eventTag.addEventListener('click', () => {
+            toggleActiveTag(eventTag, eventsContainer);
             filterGames(data.Library, searchInput.value.toLowerCase(), parseInt(ratingSlider.value), null, event);
         });
+
         eventsContainer.appendChild(eventTag);
     });
 
     searchBar.appendChild(authorsContainer);
     searchBar.appendChild(eventsContainer);
-    container.appendChild(searchBar);
 
     const resetButton = document.createElement('button');
     resetButton.textContent = 'Сбросить фильтры';
@@ -91,10 +96,14 @@ function createLibraryTab(data) {
         searchInput.value = '';
         ratingSlider.value = '0';
         sliderLabel.textContent = 'Не использовать';
-        filterGames(data.Library, '', 0, null, null);
+        clearActiveTags(authorsContainer);
+        clearActiveTags(eventsContainer);
+        filterGames(data.Library, '', 0);
     });
+
     searchBar.appendChild(resetButton);
 
+    container.appendChild(searchBar);
 
     const gamesGrid = document.createElement('div');
     gamesGrid.className = 'games-grid';
@@ -107,13 +116,21 @@ function createLibraryTab(data) {
     closeButton.textContent = '✕';
     closeButton.addEventListener('click', () => {
         sidebar.classList.add('hidden');
-        const gamesGrid = document.querySelector('.games-grid');
         gamesGrid.classList.remove('collapsed');
     });
     sidebar.appendChild(closeButton);
     container.appendChild(sidebar);
 
     updateGamesGrid(data.Library, gamesGrid, sidebar);
+}
+
+function toggleActiveTag(tag, container) {
+    container.querySelectorAll('.active-tag').forEach(activeTag => activeTag.classList.remove('active-tag'));
+    tag.classList.add('active-tag');
+}
+
+function clearActiveTags(container) {
+    container.querySelectorAll('.active-tag').forEach(tag => tag.classList.remove('active-tag'));
 }
 
 function updateGamesGrid(games, gamesGrid, sidebar) {
@@ -129,8 +146,6 @@ function updateGamesGrid(games, gamesGrid, sidebar) {
         gameTitle.textContent = game.gameName;
         gameCard.appendChild(gameTitle);
 
-        gameCard.addEventListener('mouseenter', () => gameCard.classList.add('hover'));
-        gameCard.addEventListener('mouseleave', () => gameCard.classList.remove('hover'));
         gameCard.addEventListener('click', () => showSidebar(game, sidebar));
 
         gamesGrid.appendChild(gameCard);
@@ -180,6 +195,7 @@ function showSidebar(game, sidebar) {
         reviewCard.appendChild(reviewerName);
         reviewCard.appendChild(reviewerScore);
         reviewCard.appendChild(reviewerText);
+
         reviewsContainer.appendChild(reviewCard);
     });
 
@@ -192,21 +208,19 @@ function showSidebar(game, sidebar) {
     gamesGrid.classList.add('collapsed');
 }
 
-function filterGames(games, query, rating, author, event) {
-    const gamesGrid = document.querySelector('.games-grid');
-    const sidebar = document.querySelector('.sidebar');
-
+function filterGames(games, query, rating, author = null, event = null) {
     const filteredGames = games.filter(game => {
         const matchesQuery = game.gameName.toLowerCase().startsWith(query);
         const matchesRating = rating === 0 || game.reviews.some(review => review.reviewerScore === rating);
         const matchesAuthor = !author || game.reviews.some(review => review.reviewerName === author);
-        const matchesEvent = !event || game.event === event;
+        const matchesEvent = !event || game.event.includes(event);
         return matchesQuery && matchesRating && matchesAuthor && matchesEvent;
     });
 
+    const gamesGrid = document.querySelector('.games-grid');
+    const sidebar = document.querySelector('.sidebar');
     updateGamesGrid(filteredGames, gamesGrid, sidebar);
 }
-
 
 function getUniqueAuthors(games) {
     const authors = new Set();
@@ -218,7 +232,13 @@ function getUniqueAuthors(games) {
 
 function getUniqueEvents(games) {
     const events = new Set();
-    games.forEach(game => events.add(game.event));
+    games.forEach(game => {
+        if (Array.isArray(game.event)) {
+            game.event.forEach(event => events.add(event));
+        } else {
+            events.add(game.event);
+        }
+    });
     return Array.from(events);
 }
 
