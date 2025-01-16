@@ -253,6 +253,27 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    }
+}
+
+.achievement-card.rare {
+    border-color: gold;
+    background-color: #ffeb3b;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    animation: glow 1s infinite alternate;
+}
+
+.achievement-card.rare p {
+    font-weight: bold;
+    color: #795548;
+}
+
 .achievement-card:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -350,7 +371,7 @@ body {
 .dark-theme .player-card button {
     background-color: var(--darkPrimary);
     color: var(--darkText);
-    
+
 }
 
 .dark-theme .player-card button:hover {
@@ -371,7 +392,6 @@ body {
 }
 
 .dark-theme. achievement-card p {
-    color: var(--darkBg);
 }
 
 /* media */
