@@ -105,7 +105,11 @@ function createLibraryTab(data) {
     const closeButton = document.createElement('button');
     closeButton.className = 'close-sidebar';
     closeButton.textContent = '✕';
-    closeButton.addEventListener('click', () => sidebar.classList.add('hidden'));
+    closeButton.addEventListener('click', () => {
+        sidebar.classList.add('hidden');
+        const gamesGrid = document.querySelector('.games-grid');
+        gamesGrid.classList.remove('collapsed');
+    });
     sidebar.appendChild(closeButton);
     container.appendChild(sidebar);
 
@@ -135,11 +139,14 @@ function updateGamesGrid(games, gamesGrid, sidebar) {
 
 function showSidebar(game, sidebar) {
     sidebar.innerHTML = '';
-
+    const gamesGrid = document.querySelector('.games-grid');
     const closeButton = document.createElement('button');
     closeButton.className = 'close-sidebar';
     closeButton.textContent = '✕';
-    closeButton.addEventListener('click', () => sidebar.classList.add('hidden'));
+    closeButton.addEventListener('click', () => {
+        sidebar.classList.add('hidden');
+        gamesGrid.classList.remove('collapsed'); 
+    });
     sidebar.appendChild(closeButton);
 
     const title = document.createElement('h2');
@@ -182,6 +189,7 @@ function showSidebar(game, sidebar) {
     sidebar.appendChild(reviewsContainer);
 
     sidebar.classList.remove('hidden');
+    gamesGrid.classList.add('collapsed');
 }
 
 function filterGames(games, query, rating, author, event) {

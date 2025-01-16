@@ -3,10 +3,11 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 15px;
     width: 100%;
+    transition: width 0.1s ease;
 }
 .games-grid.collapsed {
     width: 55%;
-    transition: width 0.3s ease;
+    transition: width 0.1s ease;
 }
 
 .game-card {
