@@ -1,0 +1,821 @@
+{
+  "Library" : [
+    {
+      "gameName": "Pathfinder: Kingmaker",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/640820/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Максим",
+          "reviewerScore": 1,
+          "reviewerText": "В процессе"
+        }
+      ]
+    },
+    {
+      "gameName": "Poppy Playtime",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1721470/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Максим",
+          "reviewerScore": 1,
+          "reviewerText": "дроп"
+        },
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 1,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "SCARLET NEXUS",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/775500/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 6,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Pillars of Eternity",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/291650/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 5,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Marvel's Guardians of the Galaxy",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1088850/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Life is Strange",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/319630/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 4,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Broforce",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/274190/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 5,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Yakuza Kiwami 2",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/927380/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Oxenfree",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/388880/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "RAGE 2",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/548570/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 2,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "The Dungeon Of Naheulbeuk",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/970830/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Breathedge",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/738520/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 1,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Serious Sam 4",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/257420/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 6,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Metro 2033 Redux",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/286690/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        },
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Yakuza 3 Remastered",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1088710/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 5,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Halo Wars 2",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/459220/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Игорь",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Need for Speed: Undercover",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/17430/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Devil May Cry 5",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/601150/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Bright Memory: Infinite",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1178830/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Blasphemous",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/774361/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "The Forgotten City",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/874260/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Max Payne",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/12140/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Dead Space 2",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/47780/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Inscryption",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1092790/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 10,
+          "reviewerText": ""
+        },
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "South Park: The Stick of Truth",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/213670/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 2,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "The Witcher 2: Assassins of Kings",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/20920/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "UnMetal",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1203710/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 6,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "BioShock",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/7670/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "NINJA GAIDEN Σ2",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1580790/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Hollow Knight",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/367520/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Midnight Fight Express",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1390410/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Castlevania: Lords of Shadow",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/234080/capsule_616x353.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Влад",
+          "reviewerScore": 1,
+          "reviewerText": "Дроп"
+        }
+      ]
+    },
+    {
+      "gameName": "A Short Hike",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1055540/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Into the Breach",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/590380/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 6,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Love, Money, Rock'n'Roll",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/615530/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 5,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Starcraft II Wings of Liberty",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1055540/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1361510/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 6,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Dandara: Trials of Fear Edition",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/612390/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 5,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Olija",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1297330/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Ultimate Spider-Man",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1055540/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 1,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Warcraft III",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1055540/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Momodora III",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/302790/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 4,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Call of Duty 2",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2630/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Gunpoint",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/206190/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 6,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "The Messenger",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/764790/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        },
+        {
+          "reviewerName": "Илья К",
+          "reviewerScore": 1,
+          "reviewerText": "Дроп"
+        }
+      ]
+    },
+    {
+      "gameName": "Infernax",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/374190/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Ori and the Blind Forest: Definitive Edition",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/387290/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 1,
+          "reviewerText": "Дроп"
+        }
+      ]
+    },
+    {
+      "gameName": "Escape Academy",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1812090/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Матвей",
+          "reviewerScore": 1,
+          "reviewerText": "Дроп"
+        }
+      ]
+    },
+    {
+      "gameName": "Dead Space (2008)",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/17470/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья К",
+          "reviewerScore": 2,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Deadpool",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/224060/capsule_616x353.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья К",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Sleeping Dogs",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/202170/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья К",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        },
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Life is Strange: Before the Storm",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/554620/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья К",
+          "reviewerScore": 4,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Serious Sam 3: BFE",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/41070/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья К",
+          "reviewerScore": 1,
+          "reviewerText": "Дроп"
+        }
+      ]
+    },
+    {
+      "gameName": "Road 96",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1466640/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 6,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "STAR WARS Jedi: Fallen Order",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1172380/library_600x900.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 7,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Gorogoa",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/557600/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Trek to Yomi",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1370050/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 5,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Tails Noir",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/865610/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 9,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Exo One",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/773370/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 2,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Coffee Talk",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/914800/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 3,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Deponia Doomsday",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/421050/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 6,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "INMOST",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/938560/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 8,
+          "reviewerText": ""
+        }
+      ]
+    },
+    {
+      "gameName": "Evoland Legendary Edition",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1020470/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 1,
+          "reviewerText": "Дроп"
+        }
+      ]
+    },
+    {
+      "gameName": "Eastward",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/977880/hero_capsule.jpg",
+      "event" : "Рулетыч 2022",
+      "reviews": [
+        {
+          "reviewerName": "Илья С",
+          "reviewerScore": 1,
+          "reviewerText": "Дроп"
+        }
+      ]
+    },
+    {
+      "gameName": "Cradle",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/361550/hero_capsule.jpg",
+      "event" : "Рулетыч 2023",
+      "reviews": [
+        {
+          "reviewerName": "Саня",
+          "reviewerScore": 5,
+          "reviewerText": "Сюжет норм, геймплей устарел и не о чем"
+        }
+      ]
+    },
+    {
+      "gameName": "Dragon Age Inquisition",
+      "imageLink": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1222690/hero_capsule.jpg",
+      "event" : "Рулетыч 2023",
+      "reviews": [
+        {
+          "reviewerName": "Саня",
+          "reviewerScore": 3,
+          "reviewerText": "ГОВНО"
+        }
+      ]
+    }
+  ]  
+}
