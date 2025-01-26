@@ -123,7 +123,7 @@ function createAllAchievementsPanel(container, allAchievements) {
     });
 
     toggleButton.addEventListener('click', () => {
-        panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+        panel.style.display = panel.style.display === 'none' ? 'grid' : 'none';
     });
 
     container.appendChild(toggleButton);

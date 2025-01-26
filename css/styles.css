@@ -289,22 +289,20 @@ body {
 }
 
 .all-achievements-panel {
-    display: none; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
     padding: 10px;
     border: 2px solid var(--accent);
     border-radius: 8px;
     background-color: var(--bg);
-    gap: 15px;
-    justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .all-achievements-panel.active {
-    display: flex;
+    display: grid;
 }
 
 .achievement-card {
-    flex: 1 1 calc(20% - 15px);
     max-width: 120px;
     min-width: 80px;
     height: 120px;
@@ -331,7 +329,7 @@ body {
 .achievement-card img {
     width: 60%;
     height: 60%;
-    object-fit: contain; 
+    object-fit: contain;
     border-radius: 4px;
 }
 
@@ -457,13 +455,27 @@ body {
     color: var(--darkText);
 }
 
+.dark-theme .all-achievements-panel {
+    border: 2px solid var(--darkAccent);
+    background-color: var(--darkBg);
+}
 
-.dark-theme. achievement-card {
+.dark-theme .achievement-card {
     border: 2px solid var(--darkAccent);
     background-color: var(--darkPrimary);
 }
 
-.dark-theme. achievement-card p {
+.dark-theme .achievement-card p {
+    color: var(--darkBg);
+}
+
+.dark-theme .toggle-achievements-button {
+    color: var(--darkText);
+    background-color: var(--darkAccent);
+}
+
+.dark-theme .toggle-achievements-button:hover {
+    background-color: var(--darkPrimary);
 }
 
 /* media */
